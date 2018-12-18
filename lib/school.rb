@@ -23,8 +23,8 @@ class School
 
   def sort
     @roster.sort_by {|grade, students| grade}.collect do |grade, students|
-      students.sort
+      students.sort.to_h
       #binding.pry
-    end.to_h
+    end
   end
 end
