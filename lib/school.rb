@@ -25,6 +25,6 @@ class School
     @roster.sort_by {|grade, students| grade}.collect do |grade, students|
       students.sort
       #binding.pry
-    end
+    end.to_h
   end
 end
