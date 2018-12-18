@@ -24,6 +24,7 @@ class School
   def sort
     @roster.sort_by {|grade, students| grade}.each do |grade, students|
       students.sort
-  end.to_h
+      binding.pry
+    end.to_h
   end
 end
