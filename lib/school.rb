@@ -8,6 +8,11 @@ class School
 
   def add_student(student_name, grade)
     @roster[grade] ||= []
+    # if @roster[grade] (has a value) != nil 
+    # ultilize @roster[grade]
+    # else
+    # @roster[grade] = []
+    # end
     @roster[grade] << student_name
   end
 
